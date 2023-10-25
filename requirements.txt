@@ -1,112 +1,25 @@
-absl-py==2.0.0
-altair==5.1.1
-attrs==23.1.0
-av==10.0.0
-backports.zoneinfo==0.2.1
-blinker==1.6.2
-brotlipy==0.7.0
-cachetools==5.3.1
-certifi @ file:///C:/b/abs_36eb5mzhph/croot/certifi_1690232276943/work/certifi
-cffi @ file:///C:/b/abs_49n3v2hyhr/croot/cffi_1670423218144/work
-charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
-click==8.1.7
-colorama==0.4.6
-contourpy==1.1.1
-coremltools==6.3.0
-cryptography @ file:///C:/b/abs_f4do8t8jfs/croot/cryptography_1694444424531/work
-cycler==0.11.0
-docopt==0.6.2
-filelock @ file:///C:/b/abs_c7yrhs9uz2/croot/filelock_1672387617533/work
-Flask==2.3.3
-Flask-Cors==4.0.0
-fonttools==4.42.1
-gitdb==4.0.10
-GitPython==3.1.37
-google-auth==2.23.0
-google-auth-oauthlib==1.0.0
-grpcio==1.58.0
-idna @ file:///C:/b/abs_bdhbebrioa/croot/idna_1666125572046/work
-importlib-metadata==6.8.0
-importlib-resources==6.1.0
-itsdangerous==2.1.2
-Jinja2 @ file:///C:/b/abs_7cdis66kl9/croot/jinja2_1666908141852/work
-jsonschema==4.19.1
-jsonschema-specifications==2023.7.1
-kiwisolver==1.4.5
-Markdown==3.4.4
-markdown-it-py==3.0.0
-MarkupSafe @ file:///C:/ci/markupsafe_1654489871526/work
-matplotlib==3.5.1
-mdurl==0.1.2
-mkl-fft @ file:///C:/b/abs_19i1y8ykas/croot/mkl_fft_1695058226480/work
-mkl-random @ file:///C:/b/abs_edwkj1_o69/croot/mkl_random_1695059866750/work
-mkl-service==2.4.0
-mpmath @ file:///C:/b/abs_7833jrbiox/croot/mpmath_1690848321154/work
-mss==6.1.0
-networkx @ file:///C:/b/abs_e6gi1go5op/croot/networkx_1690562046966/work
+# pip install -r requirements.txt
+
+streamlit
+
+# base ----------------------------------------
+matplotlib>=3.2.2
 numpy==1.21.5
-oauthlib==3.2.2
-opencv-python==4.7.0.68
-packaging==23.1
-pandas==1.4.1
+opencv-python-headless>=4.7.0.68
 Pillow==9.5.0
-pipreqs==0.4.13
-pkgutil_resolve_name==1.3.10
-protobuf==3.20.3
-psutil==5.9.1
-pyarrow==13.0.0
-pyasn1==0.5.0
-pyasn1-modules==0.3.0
-pycocotools==2.0.7
-pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
-pydeck==0.8.1b0
-Pygments==2.16.1
-pyOpenSSL @ file:///C:/b/abs_08f38zyck4/croot/pyopenssl_1690225407403/work
-pyparsing==3.1.1
-PyQt5==5.15.9
-pyqt5-plugins==5.15.9.2.3
-PyQt5-Qt5==5.15.2
-PyQt5-sip==12.11.0
-pyqt5-tools==5.15.9.3.3
-PySocks @ file:///C:/ci/pysocks_1605287845585/work
-python-dateutil==2.8.2
-python-dotenv==1.0.0
-pytz==2023.3.post1
 PyYAML==6.0
-QDarkStyle==3.1
-qt5-applications==5.15.2.2.3
-qt5-tools==5.15.2.1.3
-QtPy==2.4.0
-referencing==0.30.2
-requests==2.30.0
-requests-oauthlib==1.3.1
-rich==13.6.0
-rpds-py==0.10.3
-rsa==4.9
 scipy==1.8.0
-seaborn==0.11.2
-six==1.16.0
-smmap==5.0.1
-streamlit==1.27.1
-sympy @ file:///C:/b/abs_95fbf1z7n6/croot/sympy_1668202411612/work
-tenacity==8.2.3
-tensorboard==2.14.0
-tensorboard-data-server==0.7.1
-thop==0.1.1.post2209072238
-toml==0.10.2
-toolz==0.12.0
 torch==2.0.1
-torchaudio==2.0.2
 torchvision==0.15.2
-tornado==6.3.3
 tqdm==4.64.1
-typing_extensions @ file:///C:/b/abs_213vg2cd1l/croot/typing_extensions_1690297804941/work
-tzdata==2023.3
-tzlocal==5.0.1
-urllib3 @ file:///C:/b/abs_889_loyqv4/croot/urllib3_1686163174463/work
-validators==0.22.0
-watchdog==3.0.0
-Werkzeug==2.3.7
-win-inet-pton @ file:///C:/ci/win_inet_pton_1605306167264/work
-yarg==0.1.9
-zipp==3.17.0
+click==8.1.7
+
+# logging -------------------------------------
+tensorboard==2.14.0
+
+# plotting ------------------------------------
+seaborn==0.11.2
+
+# extras --------------------------------------
+thop  # FLOPS computation
+pycocotools==2.0.7  # COCO mAP

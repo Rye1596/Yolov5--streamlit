@@ -11,7 +11,7 @@ other = [18,19,20,27,32,39]
 hazardous = [2,10,21,33]
 @st.cache_resource
 def load_model():
-    model = torch.hub.load('C:/Users/DELL/Desktop/real/yolov5-trash', 'custom', "runs/train/exp/weights/best.pt",  source='local')
+    model = torch.hub.load('.', 'custom', "runs/train/exp/weights/best.pt",  source='local')
     return model
 def identify_garbage(garbage_id):
     if garbage_id in recyclables:

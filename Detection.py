@@ -146,8 +146,6 @@ if app_mode == '视频检测':
             model = load_model()
             results = model(frame)
             length = len(results.xyxy[0])
-            st.markdown(f"<h1 style='text-align: center; color:black;'>检测到的数量为：<span style='color:red;'>{length}</span></h1>",
-                unsafe_allow_html=True)
             for i in range(length):
                 # 获取目标框坐标
                 x_min, y_min, x_max, y_max = list(map(int, results.xyxy[0][i]))[:4]

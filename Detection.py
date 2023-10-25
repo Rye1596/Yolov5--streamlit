@@ -29,7 +29,7 @@ def draw_box_string(img, x_min, y_min, x_max, string):
     img = Image.fromarray(img)
     draw = ImageDraw.Draw(img)
     # simhei.ttf 是字体，你如果没有字体，需要下载
-    font = ImageFont.truetype("simhei.ttf", 25, encoding="utf-8")
+    font = ImageFont.truetype("SimHei.ttf", 25, encoding="utf-8")
     draw.rectangle([(x_min, y_min-25), (x_max, y_min)], fill=(0,255,0))
     draw.text((x_min, y_min - 25), string, (255, 255, 255), font=font)
     img = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR)

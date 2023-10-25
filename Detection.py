@@ -142,8 +142,6 @@ if app_mode == '视频检测':
     if st.button('开始检测'):
         while vid.isOpened():
             ret, frame = vid.read()
-            frame = (frame - np.min(frame)) / (np.max(frame) - np.min(frame))
-            frame = (frame * 255).astype(np.uint8)
             frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             model = load_model()
             results = model(frame)

@@ -4,11 +4,8 @@ import numpy as np
 import torch
 import tempfile
 from PIL import Image, ImageDraw, ImageFont
-from pathlib import Path
-from detect import detect
 import os
 import argparse
-from utils.plots import plot_one_box
 
 
 recyclables = [0,1,4,5,6,7,8,11,12,13,14,15,17,22,23,24,25,26,31,34,35,36,37,38,40,41,42]

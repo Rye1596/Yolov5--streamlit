@@ -1,8 +1,5 @@
 import xml.etree.ElementTree as ET
-import pickle
 import os
-from os import listdir, getcwd
-from os.path import join
 import random
 from shutil import copyfile
 
